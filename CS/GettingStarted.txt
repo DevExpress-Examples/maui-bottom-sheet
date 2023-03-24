@@ -15,4 +15,4 @@ help topic (Install DevExpress Controls Using NuGet Packages): https://docs.deve
 QuickStart Guide
 ----------------
 
-See the following topic to learn more about DevExpress Components for .NET MAUI: https://docs.devexpress.com/MAUI
+See the following topic for more details about DevExpress Components for .NET MAUI: https://docs.devexpress.com/MAUI
