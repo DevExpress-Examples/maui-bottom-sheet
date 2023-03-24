@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="share2.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs30" />
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="9.1592425"
+     inkscape:cx="-32.480852"
+     inkscape:cy="12.664803"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g24" />
+  <g
+     id="g24">
+    <title
+       id="title17">Layer 1</title>
+    <line
+       stroke="#404040"
+       stroke-width="2"
+       stroke-linecap="undefined"
+       stroke-linejoin="undefined"
+       id="svg_12"
+       y2="3.7464197"
+       x2="11.085779"
+       y1="6.710083"
+       x1="4.8501062"
+       fill="none"
+       style="stroke-width:0.866;stroke-dasharray:none" />
+    <line
+       stroke="#404040"
+       stroke-linecap="undefined"
+       stroke-linejoin="undefined"
+       id="svg_13"
+       y2="12.415408"
+       x2="10.699519"
+       y1="8.8399477"
+       x1="4.5201859"
+       stroke-width="2"
+       fill="none"
+       style="stroke-width:0.919;stroke-dasharray:none" />
+    <ellipse
+       ry="1.8977088"
+       rx="1.9053206"
+       id="svg_15"
+       cy="3.2572019"
+       cx="12.643992"
+       stroke-width="3"
+       stroke="#404040"
+       fill="none"
+       style="stroke-width:1.28;stroke-dasharray:none" />
+    <ellipse
+       ry="1.8977088"
+       rx="1.9053206"
+       id="svg_15-3"
+       cy="12.828572"
+       cx="12.446444"
+       stroke-width="3"
+       stroke="#404040"
+       fill="none"
+       style="stroke-width:1.28;stroke-dasharray:none" />
+    <ellipse
+       ry="1.8537294"
+       rx="1.8420409"
+       id="svg_18"
+       cy="7.9134145"
+       cx="2.8495898"
+       stroke-width="3"
+       stroke="#404040"
+       fill="none"
+       style="stroke-width:1.28;stroke-dasharray:none" />
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+﻿<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
+             xmlns:local="clr-namespace:MasterDetailBottomSheet"
+             x:Class= "MasterDetailBottomSheet.App"
+             windows:Application.ImageDirectory="Assets">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#6750A4</Color>
+            <Color x:Key="PrimaryDark">#1D1A22</Color>
+            <Color x:Key="Selection">#E8DEF8</Color>
+            <Color x:Key="Card_Background_Dark">#322F37</Color>
+            <Color x:Key="Card_Title_Dark">#F4EFF4</Color>
+            <Color x:Key="Card_AltTitle_Light">#CAC4D0</Color>
+            <Color x:Key="Card_AltTitle_Dark">#79747E</Color>
+            <Color x:Key="BottomSheet_Background_Light">#FAF9FC</Color>
+            <Color x:Key="BottomSheet_Background_Dark">#25232A</Color>
+            <Color x:Key="BottomSheet_Separator_Light">#625B71</Color>
+            <Color x:Key="BottomSheet_Separator_Dark">#E7E0EC</Color>
+            <Color x:Key="White">White</Color>
+            <Color x:Key="Black">Black</Color>
+            <Color x:Key="TitleLight">White</Color>
+            <Color x:Key="TitleDark">#E6E1E5</Color>
+            <Color x:Key="Gray50">#F2F2F7</Color>
+            <Color x:Key="Gray100">#E1E1E1</Color>
+            <Color x:Key="Gray200">#C8C8C8</Color>
+            <Color x:Key="Gray300">#ACACAC</Color>
+            <Color x:Key="Gray600">#404040</Color>
+            <Color x:Key="Gray900">#212121</Color>
+            <Color x:Key="Gray925">#1C1B1F</Color>
+            <Color x:Key="Gray950">#141414</Color>
+            <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
+            <SolidColorBrush x:Key="Gray200Brush" Color="{StaticResource Gray200}"/>
+            <SolidColorBrush x:Key="Gray300Brush" Color="{StaticResource Gray300}"/>
+            <SolidColorBrush x:Key="Gray600Brush" Color="{StaticResource Gray600}"/>
+            <SolidColorBrush x:Key="Gray900Brush" Color="{StaticResource Gray900}"/>
+            <SolidColorBrush x:Key="Gray950Brush" Color="{StaticResource Gray950}"/>
+
+            <Style TargetType="Border">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal" />
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="Stroke" Value="{StaticResource Primary}"/>
+                                    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Primary}}"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            
+            <Style TargetType="Shell" ApplyToDerivedTypes="True">
+                <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
+                <Setter Property="Shell.ForegroundColor" Value="{OnPlatform WinUI={StaticResource Primary}, Default={StaticResource White}}" />
+                <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light={StaticResource TitleLight}, Dark={StaticResource TitleDark}}" />
+                <Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
+                <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray200}}" />
+                <Setter Property="Shell.NavBarHasShadow" Value="False" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
+                <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource Gray200}}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

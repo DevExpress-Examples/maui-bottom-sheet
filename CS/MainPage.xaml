@@ -1,0 +1,66 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+    xmlns:dxcv="clr-namespace:DevExpress.Maui.CollectionView;assembly=DevExpress.Maui.CollectionView"
+    xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+    xmlns:local="clr-namespace:MasterDetailBottomSheet" ios:Page.UseSafeArea="true" x:Class="MasterDetailBottomSheet.MainPage" BackgroundColor="{AppThemeBinding Light={StaticResource Gray50}, Dark={StaticResource Gray925}}">
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <local:StatusToColorConverter x:Key="statusToColorConverter"/>
+    </ContentPage.Resources>
+    <Grid>
+        <CollectionView ItemsSource="{Binding Orders}" SelectionMode="Single" SelectedItem="{Binding SelectedOrder, Mode=TwoWay}" SelectionChanged="CollectionView_SelectionChanged" Scrolled="CollectionView_Scrolled" Margin="10,10,10,0">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type local:Order}">
+                    <Border StrokeShape="{OnPlatform RoundRectangle 10, iOS=RoundRectangle 1}" BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Card_Background_Dark}}" StrokeThickness="1">
+                        <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto" Padding="16" BackgroundColor="Transparent">
+                            <Label Text="{Binding OrderID}" FontSize="18" TextColor="{AppThemeBinding Light={StaticResource Gray925}, Dark={StaticResource Card_Title_Dark}}" FontAttributes="Bold"/>
+                            <Label Text="{Binding OrderDate, StringFormat='{0:m}'}" Margin="0,4,0,0" TextColor="{AppThemeBinding Light={StaticResource Card_AltTitle_Light}, Dark={StaticResource Card_AltTitle_Dark}}" Grid.Row="1"/>
+                            <Label Text="{Binding Status}" Margin="0,4,0,0" TextColor="{Binding Status, Converter={StaticResource statusToColorConverter}}" Grid.Row="2"/>
+                            <Label Text="{Binding TotalAmount, StringFormat='{0:c}'}" FontSize="18" HorizontalOptions="End" TextColor="{AppThemeBinding Light={StaticResource Gray925}, Dark={StaticResource Card_Title_Dark}}" Grid.Column="1"/>
+                            <Label Text="{Binding Details.Count, StringFormat='{0} items'}" HorizontalOptions="End" Margin="0,4,0,0" TextColor="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray200}}" Grid.Column="1" Grid.Row="1"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <dxco:BottomSheet x:Name="bottomSheet" ShowGrabber="True" AllowDismiss="True" BackgroundColor="{AppThemeBinding Light={StaticResource BottomSheet_Background_Light}, Dark={StaticResource BottomSheet_Background_Dark}}" IsModal="false" HalfExpandedRatio="0.4">
+            <Grid RowDefinitions="Auto, Auto, Auto, *">
+                <HorizontalStackLayout BindableLayout.ItemsSource="{Binding ActionItems}" HorizontalOptions="Center" Margin="0,0,0,20">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <dxco:SimpleButton BackgroundColor="{AppThemeBinding Light={StaticResource BottomSheet_Background_Light}, Dark={StaticResource BottomSheet_Background_Dark}}" WidthRequest="70" Padding="0,10,0,10" Command="{Binding Command}" CommandParameter="{Binding}">
+                                <VerticalStackLayout>
+                                    <dxco:DXImage Source="{Binding IconPath}" HeightRequest="18" WidthRequest="18" HorizontalOptions="Center" TintColor="{AppThemeBinding Light={StaticResource BottomSheet_Background_Dark}, Dark={StaticResource BottomSheet_Background_Light}}"/>
+                                    <Label Text="{Binding Caption}" FontSize="12" HorizontalOptions="Center" Margin="0,8,0,0" TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray100}}"/>
+                                </VerticalStackLayout>
+                            </dxco:SimpleButton>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </HorizontalStackLayout>
+                <Border Grid.Row="1" HeightRequest="2" BackgroundColor="{AppThemeBinding Light={StaticResource BottomSheet_Separator_Light}, Dark={StaticResource BottomSheet_Separator_Dark}}" HorizontalOptions="Fill" StrokeThickness="0" Margin="16,0,16,0"/>
+                <Label Text="Ordered items" Grid.Row="2" Margin="16,10,16,0" FontAttributes="Bold" TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray100}}"/>
+                <CollectionView ItemsSource="{Binding SelectedOrder.Details}" SelectionMode="None" Grid.Row="3">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="{x:Type local:OrderDetails}">
+                            <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="*,*" HeightRequest="72" Padding="16">
+                                <Image HeightRequest="24" WidthRequest="24" Margin="0,0,16,0" Source="{Binding Product.ImagePath}" VerticalOptions="Center" Grid.RowSpan="2"/>
+                                <Label Text="{Binding Product.ProductName}" TextColor="{AppThemeBinding Light={StaticResource Gray925}, Dark={StaticResource Card_Title_Dark}}" FontAttributes="Bold" Grid.Column="1" VerticalOptions="End"/>
+                                <HorizontalStackLayout Grid.Column="1" Grid.Row="1" VerticalOptions="End">
+                                    <Label Text="{Binding Product.UnitPrice, StringFormat='{0:c}'}"/>
+                                    <Label Text="{Binding Quantity, StringFormat=' x {0}'}"/>
+                                </HorizontalStackLayout>
+                                <Label Text="{Binding ProductTotal, StringFormat='{0:c}'}" TextColor="{AppThemeBinding Light={StaticResource Gray925}, Dark={StaticResource Card_Title_Dark}}" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="2" Grid.RowSpan="2"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </dxco:BottomSheet>
+    </Grid>
+</ContentPage>
