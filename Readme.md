@@ -4,6 +4,8 @@
 
 This example shows how you can use our [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet?v=23.1) control to implement a master-detail view. The detail view includes a list ([CollectionView](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/collectionview/?view=net-maui-7.0)) and custom buttons ([SimpleButtons](https://docs.devexpress.com/Maui/DevExpress.Maui.Controls.SimpleButton)).
 
+<img src="https://user-images.githubusercontent.com/12169834/227953850-11c0d7cc-e6c5-49ec-ac59-80837663c0d0.png" width="30%"/>
+
 ## Requirements
 
 Please register the DevExpress NuGet Gallery in Visual Studio to restore NuGet packages used in this solution. See the following topic for more information: [Get Started with DevExpress Mobile UI for .NET MAUI](https://docs.devexpress.com/MAUI/403249/get-started).
