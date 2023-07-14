@@ -1,8 +1,8 @@
 <!-- default badges list -->
 <!-- default badges end -->
-# DevExpress .NET MAUI Bottom Sheet - Implement the Master Detail View
+# DevExpress .NET MAUI Bottom Sheet Control
 
-This repository contains the following projects that  shows how you can use our [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet?v=23.1) control:
+This repository contains the following projects that shows how you can use our [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet?v=23.1) control:
 
 * [Implement the Master Detail View](CS/MasterDetail/Readme.md)
 
