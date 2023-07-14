@@ -1,0 +1,86 @@
+﻿<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
+             xmlns:local="clr-namespace:MapAndBottmSheetExample"
+             xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+             x:Class= "MapAndBottmSheetExample.App"
+             windows:Application.ImageDirectory="Assets">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="Primary">#6750A4</Color>
+            <Color x:Key="PrimaryDark">#D1BCFF</Color>
+            <Color x:Key="Secondary">#DFD8F7</Color>
+            <Color x:Key="Tertiary">#2B0B98</Color>
+            <Color x:Key="White">White</Color>
+            <Color x:Key="Black">Black</Color>
+            <Color x:Key="Gray50">#F2F2F7</Color>
+            <Color x:Key="Gray100">#E1E1E1</Color>
+            <Color x:Key="Gray200">#C8C8C8</Color>
+            <Color x:Key="Gray300">#ACACAC</Color>
+            <Color x:Key="Gray400">#919191</Color>
+            <Color x:Key="Gray500">#6E6E6E</Color>
+            <Color x:Key="Gray600">#404040</Color>
+            <Color x:Key="Gray900">#212121</Color>
+            <Color x:Key="Gray950">#141414</Color>
+            <Color x:Key="TonalForeground">#1D192B</Color>
+            <Color x:Key="OnSurfaceForeground">#1C1B1F</Color>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource White}}"/>
+            </Style>
+            <Style TargetType="Label" x:Key="paleLabelStyle">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray400}, Dark={StaticResource Gray400}}"/>
+            </Style>
+            <Style TargetType="Label" x:Key="buttonLabelBase">
+                <Setter Property="Margin" Value="8,0,0,0"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            <Style TargetType="Label" x:Key="filledButtonTextLabel" BasedOn="{StaticResource buttonLabelBase}">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"/>
+            </Style>
+            <Style TargetType="Label" x:Key="outlinedButtonTextLabel" BasedOn="{StaticResource buttonLabelBase}">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource PrimaryDark}}"/>
+            </Style>
+
+            <Style TargetType="dxco:DXImage" x:Key="buttonImageBase">
+                <Setter Property="HeightRequest" Value="18"/>
+                <Setter Property="WidthRequest" Value="18"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            <Style TargetType="dxco:DXImage" x:Key="filledButtonTextImage" BasedOn="{StaticResource buttonImageBase}">
+                <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"/>
+            </Style>
+            <Style TargetType="dxco:DXImage" x:Key="outlinedButtonTextImage" BasedOn="{StaticResource buttonImageBase}">
+                <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource PrimaryDark}}"/>
+            </Style>
+
+            <Style TargetType="dxco:SimpleButton" x:Key="actionButton">
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="Padding" Value="12,0,16,0"/>
+                <Setter Property="Margin" Value="0,0,8,0"/>
+            </Style>
+            <Style TargetType="dxco:SimpleButton" x:Key="actionButtonOutlined" BasedOn="{StaticResource actionButton}">
+                <!--<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"/>-->
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BorderColor" Value="{StaticResource Gray400}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+            </Style>
+            <!--<Style TargetType="dxco:DXImage" x:Key="filledButton" BasedOn="{StaticResource buttonBase}">
+                <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"/>
+            </Style>
+            <Style TargetType="dxco:DXImage" x:Key="outlinedButton" BasedOn="{StaticResource buttonBase}">
+                <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource White}}"/>
+            </Style>-->
+
+            <Style TargetType="Page" ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray50}, Dark={StaticResource Black}}" />
+            </Style>
+            <Style TargetType="Shell" ApplyToDerivedTypes="True">
+                <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray50}, Dark={StaticResource Black}}" />
+                <Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource White}}" />
+                <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource White}}" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
