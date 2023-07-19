@@ -19,11 +19,11 @@ You can also refer to the following YouTube video for more information on how to
 ## Files to Review
 
 <!-- default file list -->
-* [MainPage.xaml](./CS/MainPage.xaml)
-* [MainPage.xaml.cs](./CS/MainPage.xaml.cs)
-* [MainViewModel.cs](./CS/MainViewModel.cs)
-* [Converters.cs](./CS/Converters.cs)
-* [App.xaml](./CS/App.xaml)
+* [MainPage.xaml](MainPage.xaml)
+* [MainPage.xaml.cs](MainPage.xaml.cs)
+* [MainViewModel.cs](MainViewModel.cs)
+* [Converters.cs](Converters.cs)
+* [App.xaml](CS/App.xaml)
 <!-- default file list end -->
 
 ## Documentation
