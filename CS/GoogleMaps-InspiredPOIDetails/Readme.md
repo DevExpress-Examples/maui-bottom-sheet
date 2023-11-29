@@ -1,6 +1,6 @@
 # Google Maps-Inspired POI Details
 
-This example uses the DevExpress [BottomSheet](xref:DevExpress.Maui.Controls.BottomSheet) control to replicate POI (point of interest) details from Google Maps. The detail view includes an image gallery, action buttons, and description.
+This example uses the DevExpress [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet) control to replicate POI (point of interest) details from Google Maps. The detail view includes an image gallery, action buttons, and description.
 
 <img src="https://github.com/DevExpress-Examples/maui-bottom-sheet/assets/12169834/20ae4825-4c89-4346-8730-f0481c233714" width="30%"/>
 
@@ -24,7 +24,7 @@ You can also refer to the following YouTube video for more information on how to
     </maps:Map>
     ``` 
 * Set the [State](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet.State) property to *HalfExpanded* on the POI click to display the BottomSheet with POI details. Use the [HalfExpandedRatio](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet.HalfExpandedRatio) property to define the BottomSheet's height in *HalfExpanded* state.
-* The [BindableLayout.ItemsSource](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/bindablelayout) property fills the container (a [FlexLayout](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/flexlayout) in this demo) with items from the bound collection. The project uses the property to display items from the *Places* collection as buttons. The [FlexLayout.Basis](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.flexlayout.basis?view=xamarin-forms) attached property specifies the width of layout items within the container.
+* The [BindableLayout.ItemsSource](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/bindablelayout) property fills the container (a [FlexLayout](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/layouts/flexlayout) in this demo) with items from the bound collection. The project uses the property to display items from the *Places* collection as buttons. The [FlexLayout.Basis](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.flexlayout.basisproperty?view=net-maui-8.0) attached property specifies the width of layout items within the container.
   
     ```xml
     <BindableLayout.ItemTemplate>
