@@ -23,7 +23,7 @@ You can also refer to the following YouTube video for more information on how to
 * [MainPage.xaml.cs](MainPage.xaml.cs)
 * [MainViewModel.cs](MainViewModel.cs)
 * [Converters.cs](Converters.cs)
-* [App.xaml](CS/App.xaml)
+* [App.xaml](App.xaml)
 <!-- default file list end -->
 
 ## Documentation
