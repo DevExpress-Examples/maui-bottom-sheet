@@ -1,6 +1,6 @@
 # Google Maps-Inspired POI Details
 
-This example uses the DevExpress [BottomSheet](xref:DevExpress.Maui.Controls.BottomSheet) control to replicate POI (point of interest) details from Google Maps. The detail view includes an image gallery, action buttons, and description.
+This example uses the DevExpress [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet) control to replicate POI (point of interest) details from Google Maps. The detail view includes an image gallery, action buttons, and description.
 
 <img src="https://github.com/DevExpress-Examples/maui-bottom-sheet/assets/12169834/20ae4825-4c89-4346-8730-f0481c233714" width="30%"/>
 
