@@ -31,7 +31,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
     <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-    <PackageReference Include="DevExpress.Maui.Controls" Version="23.2.2-beta" />
+    <PackageReference Include="DevExpress.Maui.Controls" Version="23.2.*" />
     <PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.81" />
   </ItemGroup>
 </Project>
