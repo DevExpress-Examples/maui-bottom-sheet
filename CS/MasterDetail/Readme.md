@@ -1,6 +1,6 @@
 # DevExpress .NET MAUI Bottom Sheet - Implement the Master Detail View
 
-This example shows how you can use our [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet?v=23.1) control to implement a master-detail view. The detail view includes a list ([CollectionView](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/collectionview/?view=net-maui-7.0)) and custom buttons ([SimpleButtons](https://docs.devexpress.com/Maui/DevExpress.Maui.Controls.SimpleButton)).
+This example shows how you can use our [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet?v=23.1) control to implement a master-detail view. The detail view includes a list ([CollectionView](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/collectionview/?view=net-maui-7.0)) and custom buttons ([DXButton](https://docs.devexpress.com/Maui/DevExpress.Maui.Core.DXButton)).
 
 <img src="https://user-images.githubusercontent.com/12169834/227953850-11c0d7cc-e6c5-49ec-ac59-80837663c0d0.png" width="30%"/>
 
@@ -29,7 +29,7 @@ You can also refer to the following YouTube video for more information on how to
 ## Documentation
 
 - [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet?v=23.1)
-- [SimpleButtons](https://docs.devexpress.com/Maui/DevExpress.Maui.Controls.SimpleButton)
+- [DXButton](https://docs.devexpress.com/Maui/DevExpress.Maui.Core.DXButton)
 
 ## More Examples
 

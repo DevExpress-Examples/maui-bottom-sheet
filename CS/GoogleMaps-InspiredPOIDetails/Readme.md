@@ -48,8 +48,8 @@ You can also refer to the following YouTube video for more information on how to
 
 - [Featured Scenarios: Google Maps-Inspired POI Details](https://docs.devexpress.com/MAUI/404467/)
 - [More Featured Scenarios](https://docs.devexpress.com/MAUI/404291/scenarios)
-- [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet?v=23.1)
-- [SimpleButtons](https://docs.devexpress.com/Maui/DevExpress.Maui.Controls.SimpleButton)
+- [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet)
+- [DXButton](https://docs.devexpress.com/MAUI/DevExpress.Maui.Core.DXButton)
 
 ## More Examples
 
