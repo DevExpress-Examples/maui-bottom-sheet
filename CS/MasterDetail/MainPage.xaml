@@ -1,6 +1,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+    xmlns:dx="clr-namespace:DevExpress.Maui.Core;assembly=DevExpress.Maui.Core"
     xmlns:dxcv="clr-namespace:DevExpress.Maui.CollectionView;assembly=DevExpress.Maui.CollectionView"
     xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
     xmlns:local="clr-namespace:MasterDetailBottomSheet" ios:Page.UseSafeArea="true" x:Class="MasterDetailBottomSheet.MainPage" BackgroundColor="{AppThemeBinding Light={StaticResource Gray50}, Dark={StaticResource Gray925}}">
@@ -34,12 +35,12 @@
                 <HorizontalStackLayout BindableLayout.ItemsSource="{Binding ActionItems}" HorizontalOptions="Center" Margin="0,0,0,20">
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
-                            <dxco:SimpleButton BackgroundColor="{AppThemeBinding Light={StaticResource BottomSheet_Background_Light}, Dark={StaticResource BottomSheet_Background_Dark}}" WidthRequest="70" Padding="0,10,0,10" Command="{Binding Command}" CommandParameter="{Binding}">
+                            <dx:DXButton BackgroundColor="{AppThemeBinding Light={StaticResource BottomSheet_Background_Light}, Dark={StaticResource BottomSheet_Background_Dark}}" WidthRequest="70" Padding="0,10,0,10" Command="{Binding Command}" CommandParameter="{Binding}">
                                 <VerticalStackLayout>
-                                    <dxco:DXImage Source="{Binding IconPath}" HeightRequest="18" WidthRequest="18" HorizontalOptions="Center" TintColor="{AppThemeBinding Light={StaticResource BottomSheet_Background_Dark}, Dark={StaticResource BottomSheet_Background_Light}}"/>
+                                    <dx:DXImage Source="{Binding IconPath}" HeightRequest="18" WidthRequest="18" HorizontalOptions="Center" TintColor="{AppThemeBinding Light={StaticResource BottomSheet_Background_Dark}, Dark={StaticResource BottomSheet_Background_Light}}"/>
                                     <Label Text="{Binding Caption}" FontSize="12" HorizontalOptions="Center" Margin="0,8,0,0" TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray100}}"/>
                                 </VerticalStackLayout>
-                            </dxco:SimpleButton>
+                            </dx:DXButton>
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>
                 </HorizontalStackLayout>

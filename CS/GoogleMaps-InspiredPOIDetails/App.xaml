@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
              xmlns:local="clr-namespace:MapAndBottmSheetExample"
-             xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+             xmlns:dx="clr-namespace:DevExpress.Maui.Core;assembly=DevExpress.Maui.Core"
              x:Class= "MapAndBottmSheetExample.App"
              windows:Application.ImageDirectory="Assets">
     <Application.Resources>
@@ -42,33 +42,33 @@
                 <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource PrimaryDark}}"/>
             </Style>
 
-            <Style TargetType="dxco:DXImage" x:Key="buttonImageBase">
+            <Style TargetType="dx:DXImage" x:Key="buttonImageBase">
                 <Setter Property="HeightRequest" Value="18"/>
                 <Setter Property="WidthRequest" Value="18"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
             </Style>
-            <Style TargetType="dxco:DXImage" x:Key="filledButtonTextImage" BasedOn="{StaticResource buttonImageBase}">
+            <Style TargetType="dx:DXImage" x:Key="filledButtonTextImage" BasedOn="{StaticResource buttonImageBase}">
                 <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"/>
             </Style>
-            <Style TargetType="dxco:DXImage" x:Key="outlinedButtonTextImage" BasedOn="{StaticResource buttonImageBase}">
+            <Style TargetType="dx:DXImage" x:Key="outlinedButtonTextImage" BasedOn="{StaticResource buttonImageBase}">
                 <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource PrimaryDark}}"/>
             </Style>
 
-            <Style TargetType="dxco:SimpleButton" x:Key="actionButton">
+            <Style TargetType="dx:DXButton" x:Key="actionButton">
                 <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="Padding" Value="12,0,16,0"/>
                 <Setter Property="Margin" Value="0,0,8,0"/>
             </Style>
-            <Style TargetType="dxco:SimpleButton" x:Key="actionButtonOutlined" BasedOn="{StaticResource actionButton}">
+            <Style TargetType="dx:DXButton" x:Key="actionButtonOutlined" BasedOn="{StaticResource actionButton}">
                 <!--<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"/>-->
                 <Setter Property="BackgroundColor" Value="Transparent"/>
                 <Setter Property="BorderColor" Value="{StaticResource Gray400}"/>
                 <Setter Property="BorderThickness" Value="1"/>
             </Style>
-            <!--<Style TargetType="dxco:DXImage" x:Key="filledButton" BasedOn="{StaticResource buttonBase}">
+            <!--<Style TargetType="dx:DXImage" x:Key="filledButton" BasedOn="{StaticResource buttonBase}">
                 <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}"/>
             </Style>
-            <Style TargetType="dxco:DXImage" x:Key="outlinedButton" BasedOn="{StaticResource buttonBase}">
+            <Style TargetType="dx:DXImage" x:Key="outlinedButton" BasedOn="{StaticResource buttonBase}">
                 <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource White}}"/>
             </Style>-->
 
