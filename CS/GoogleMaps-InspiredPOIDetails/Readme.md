@@ -29,9 +29,9 @@ You can also refer to the following YouTube video for more information on how to
     ```xml
     <BindableLayout.ItemTemplate>
         <DataTemplate x:DataType="{x:Type local:ActionItem}">
-            <VerticalStackLayout Margin="5" HorizontalOptions="Center" FlexLayout.Basis="25%">
+            <dx:DXStackLayout Orientation="Vertical" Margin="5" HorizontalOptions="Center" FlexLayout.Basis="25%">
                 <!-- ... -->
-            </VerticalStackLayout>
+            </dx:DXStackLayout>
         </DataTemplate>
     </BindableLayout.ItemTemplate>
     ```
