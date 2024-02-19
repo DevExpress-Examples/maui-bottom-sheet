@@ -82,7 +82,7 @@
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>
                 </FlexLayout>
-                <BoxView HeightRequest="1" BackgroundColor="{AppThemeBinding Light=#CAC4D0, Dark=#625A71}" Margin="20,20,20,20"/>
+                <dx:DXSeparator HeightRequest="1" BackgroundColor="{AppThemeBinding Light=#CAC4D0, Dark=#625A71}" Margin="20,20,20,20"/>
                 <Label Text="{Binding SelectedCity.Description}" LineHeight="1.5" LineBreakMode="WordWrap" Margin="16,0,0,0"/>
             </dx:DXStackLayout>
         </dxco:BottomSheet>
