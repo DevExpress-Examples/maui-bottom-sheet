@@ -1,8 +1,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
-    xmlns:dx="clr-namespace:DevExpress.Maui.Core;assembly=DevExpress.Maui.Core"
-    xmlns:dxcv="clr-namespace:DevExpress.Maui.CollectionView;assembly=DevExpress.Maui.CollectionView"
+    xmlns:dx="http://schemas.devexpress.com/maui"
     xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
     xmlns:local="clr-namespace:MasterDetailBottomSheet" ios:Page.UseSafeArea="true" x:Class="MasterDetailBottomSheet.MainPage" BackgroundColor="{AppThemeBinding Light={StaticResource Gray50}, Dark={StaticResource Gray925}}">
     <ContentPage.BindingContext>
@@ -30,7 +28,7 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        <dxco:BottomSheet x:Name="bottomSheet" ShowGrabber="True" AllowDismiss="True" BackgroundColor="{AppThemeBinding Light={StaticResource BottomSheet_Background_Light}, Dark={StaticResource BottomSheet_Background_Dark}}" IsModal="false" HalfExpandedRatio="0.4">
+        <dx:BottomSheet x:Name="bottomSheet" ShowGrabber="True" AllowDismiss="True" BackgroundColor="{AppThemeBinding Light={StaticResource BottomSheet_Background_Light}, Dark={StaticResource BottomSheet_Background_Dark}}" IsModal="false" HalfExpandedRatio="0.4">
             <Grid RowDefinitions="Auto, Auto, Auto, *">
                 <dx:DXStackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding ActionItems}" HorizontalOptions="Center" Margin="0,0,0,20">
                     <BindableLayout.ItemTemplate>
@@ -62,6 +60,6 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </Grid>
-        </dxco:BottomSheet>
+        </dx:BottomSheet>
     </Grid>
 </ContentPage>

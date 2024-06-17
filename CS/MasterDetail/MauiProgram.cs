@@ -11,6 +11,10 @@ namespace MasterDetailBottomSheet {
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseDevExpressControls()
+                .UseDevExpressCollectionView()
+                .UseDevExpressDataGrid()
+                .UseDevExpressEditors()
                 .UseDevExpress(useLocalization: true)
                 .ConfigureFonts(fonts =>
                 {

@@ -11,6 +11,7 @@ namespace MapAndBottmSheetExample {
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseDevExpressControls()
                 .UseDevExpress(useLocalization: true)
                 .ConfigureFonts(fonts =>
                 {

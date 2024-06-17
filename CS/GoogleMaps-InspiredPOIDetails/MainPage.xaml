@@ -1,7 +1,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
-    xmlns:dx="clr-namespace:DevExpress.Maui.Core;assembly=DevExpress.Maui.Core"
+    xmlns:dx="http://schemas.devexpress.com/maui"
     xmlns:maps="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:sensors="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
     xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
@@ -31,7 +30,7 @@
                 </DataTemplate>
             </maps:Map.ItemTemplate>
         </maps:Map>
-        <dxco:BottomSheet x:Name="bottomSheet" ShowGrabber="True" AllowDismiss="True" IsModal="false" Grid.Row="1" Padding="0">
+        <dx:BottomSheet x:Name="bottomSheet" ShowGrabber="True" AllowDismiss="True" IsModal="false" Grid.Row="1" Padding="0">
             <dx:DXStackLayout Orientation="Vertical" Margin="0,16,0,0">
                 <Label Text="{Binding SelectedCity.Name}" FontSize="18" Margin="16,0,0,0"/>
                 <Label Text="{Binding SelectedCity.Address}" Style="{StaticResource paleLabelStyle}" Margin="16,0,0,0"/>
@@ -85,6 +84,6 @@
                 <dx:DXSeparator HeightRequest="1" BackgroundColor="{AppThemeBinding Light=#CAC4D0, Dark=#625A71}" Margin="20,20,20,20"/>
                 <Label Text="{Binding SelectedCity.Description}" LineHeight="1.5" LineBreakMode="WordWrap" Margin="16,0,0,0"/>
             </dx:DXStackLayout>
-        </dxco:BottomSheet>
+        </dx:BottomSheet>
     </Grid>
 </ContentPage>
