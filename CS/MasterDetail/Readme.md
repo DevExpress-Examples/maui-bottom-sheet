@@ -1,6 +1,6 @@
 # DevExpress .NET MAUI Bottom Sheet - Implement the Master Detail View
 
-This example shows how you can use our [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet?v=23.1) control to implement a master-detail view. The detail view includes a list ([CollectionView](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/collectionview/?view=net-maui-7.0)) and custom buttons ([DXButton](https://docs.devexpress.com/Maui/DevExpress.Maui.Core.DXButton)).
+This example shows how you can use our [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet) control to implement a master-detail view. The detail view includes a list ([CollectionView](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/collectionview/?view=net-maui-7.0)) and custom buttons ([DXButton](https://docs.devexpress.com/Maui/DevExpress.Maui.Core.DXButton)).
 
 <img src="https://user-images.githubusercontent.com/12169834/227953850-11c0d7cc-e6c5-49ec-ac59-80837663c0d0.png" width="30%"/>
 
@@ -12,8 +12,8 @@ You can also refer to the following YouTube video for more information on how to
 
 ## Implementation Details
 
-* Handle the [CollectionView.SelectionChanged](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.selectableitemsview.selectionchanged?view=net-maui-7.0) event and set the [BottomSheet.State](https://docs.devexpress.com/Maui/DevExpress.Maui.Controls.BottomSheet.State?v=23.1) and [BottomSheet.HalfExpandedRatio](https://docs.devexpress.com/Maui/DevExpress.Maui.Controls.BottomSheet.HalfExpandedRatio?v=23.1) properties to expand the bottom sheet when a user selects an item.
-* Handle the [CollectionView.Scrolled](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.itemsview.scrolled?view=net-maui-7.0) event and decrease the [BottomSheet.HalfExpandedRatio](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet.HalfExpandedRatio?v=23.1) property value to adjust the bottom sheet height and give users more space to observe the master view.
+* Handle the [CollectionView.SelectionChanged](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.selectableitemsview.selectionchanged?view=net-maui-7.0) event and set the [BottomSheet.State](https://docs.devexpress.com/Maui/DevExpress.Maui.Controls.BottomSheet.State) and [BottomSheet.HalfExpandedRatio](https://docs.devexpress.com/Maui/DevExpress.Maui.Controls.BottomSheet.HalfExpandedRatio) properties to expand the bottom sheet when a user selects an item.
+* Handle the [CollectionView.Scrolled](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.itemsview.scrolled?view=net-maui-7.0) event and decrease the [BottomSheet.HalfExpandedRatio](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet.HalfExpandedRatio) property value to adjust the bottom sheet height and give users more space to observe the master view.
 * Bind the detail [CollectionView](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/collectionview/?view=net-maui-7.0) to the master's  [CollectionView.SelectedItem](https://learn.microsoft.com/en-us/dotnet/api/microsoft.maui.controls.selectableitemsview.selecteditem?view=net-maui-7.0) property to populate the detail collection.
 
 ## Files to Review
@@ -28,7 +28,7 @@ You can also refer to the following YouTube video for more information on how to
 
 ## Documentation
 
-- [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet?v=23.1)
+- [BottomSheet](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.BottomSheet)
 - [DXButton](https://docs.devexpress.com/Maui/DevExpress.Maui.Core.DXButton)
 
 ## More Examples
