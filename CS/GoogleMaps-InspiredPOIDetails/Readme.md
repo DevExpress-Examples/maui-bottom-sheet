@@ -14,7 +14,6 @@ You can also refer to the following YouTube video for more information on how to
 ## Implementation Details
 
 * The **Map Control** displays Google Maps. Refer to the following Microsoft documentation topic for more information on the [Map Control](https://docs.microsoft.com/en-us/dotnet/maui/user-interface/controls/map). 
-* This example uses a Google API key with a limited number of API calls. Refer to the following topic for more information on how to set up your Google API key: [Set up your Google Cloud project](https://developers.google.com/maps/documentation/android-sdk/cloud-setup).
 * The following code gets POIs (points of interest) from the *Cities* collection and adds them to the Map control: 
     ```xml
     <maps:Map ItemsSource="{Binding Cities}">
