@@ -34,7 +34,7 @@ You can also refer to the following YouTube video for more information on how to
 * [Stocks App](https://github.com/DevExpress-Examples/maui-stocks-mini)
 * [Demo Application](https://github.com/DevExpress-Examples/maui-demo-app)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=maui-bottom-sheet&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=maui-bottom-sheet&~~~was_helpful=no)
 
